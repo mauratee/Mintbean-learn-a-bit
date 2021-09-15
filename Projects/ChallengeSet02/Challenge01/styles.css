@@ -2,7 +2,43 @@
 body {
     background-image: url("../Challenge01/images/flower-background.jpg");
     background-size: cover;
-    background-color: black;
+    background-color: #232932;
+    color:#FFFFFF;
+    font-family: sans-serif;
 }
 
+  a {
+    outline: none;
+    text-decoration: none;
+    padding: .5em 1em;
+  }
+
+  a:link {
+    color: #ffffff;
+  }
+  
+  a:visited {
+    color: #c3c3c3;
+  }
+  
+  a:hover {
+    border-bottom: 1px solid #c3c3c3;
+    /* background: #CDFEAA; */
+  }
+  
+  a:active {
+    /* background: #265301; */
+    color: blue;
+  }
+
 /* || Navigation */
+
+.navigation {
+    display: flex;
+    float: right;
+    width: 100%;
+}
+
+.navigation img {
+    float: left;
+}
