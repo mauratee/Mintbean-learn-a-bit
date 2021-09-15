@@ -1,0 +1,8 @@
+/* || General styles */
+body {
+    background-image: url("../Challenge01/images/flower-background.jpg");
+    background-size: cover;
+    background-color: black;
+}
+
+/* || Navigation */
