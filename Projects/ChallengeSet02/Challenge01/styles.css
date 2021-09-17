@@ -4,7 +4,7 @@ body {
     background-size: cover;
     background-color: #232932;
     color:#FFFFFF;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
     margin-right: 30px;
     margin-left: 30px;
@@ -39,17 +39,26 @@ body {
 .navigation {
     display: flex;
     /* flex-wrap: nowrap;  */
-    height: 10vw;
-    justify-content: flex-end;
-    float: right;
+    height: 5vw;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    position: sticky;
     font-weight: bold;
     font-size: 2.5rem;
 }
 
 .logo {
-    float: left;
+    /* position: relative;
+    top: 25px;
+    right: -40px; */
     color:darkgoldenrod;
+    float: left;
+}
+
+ul {
+  align-items: center;
+  padding: 10px;
 }
 
 /* || Button */
@@ -59,7 +68,24 @@ button {
   height: 3vw;
   width: 10vw;
   border-radius: 10px;
-  padding: 10px;
-  font-size: 1rem;
+  padding: 10px, 30px;
+  font-size: 1.5rem;
   border: none;
+}
+
+/* || Content */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  max-width: 30%;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  text-shadow: 3px 3px 3px #8f8f8f;
+  font-size: 4rem;
+  font-family: 'Open Sans', sans-serif;
 }
