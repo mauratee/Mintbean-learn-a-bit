@@ -30,7 +30,7 @@ body {
   }
   
   a:active {
-    color: blue;
+    color: white;
   }
 
 /* || Navigation */
@@ -61,11 +61,6 @@ li {
   list-style-type: none;
 }
 
-/* ul {
-  align-items: center;
-  padding: 10px;
-} */
-
 /* || Button */
 
 button {
@@ -81,7 +76,11 @@ button {
 
 button:hover {
   background-color: #f0ae0e;
-  
+}
+
+button:active {
+  border: 2px solid black;
+  text-shadow: 3px 3px 3px #707070;
 }
 
 /* || Content */
