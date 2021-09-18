@@ -13,7 +13,8 @@ body {
   a {
     outline: none;
     text-decoration: none;
-    padding: .5em 1em;
+    padding: 10px 30px;
+    float: right;
   }
 
   a:link {
@@ -26,21 +27,21 @@ body {
   
   a:hover {
     border-bottom: 1px solid #c3c3c3;
-    /* background: #CDFEAA; */
   }
   
   a:active {
-    /* background: #265301; */
     color: blue;
   }
 
 /* || Navigation */
+/* MDN reference for split navigation bar using Flex:
+ https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Split_Navigation */
 
 .navigation {
     display: flex;
     /* flex-wrap: nowrap;  */
     height: 5vw;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
     width: 100%;
     position: sticky;
@@ -49,17 +50,20 @@ body {
 }
 
 .logo {
-    /* position: relative;
-    top: 25px;
-    right: -40px; */
     color:darkgoldenrod;
     float: left;
+    /* Split from other nav bar elements and send to left edge */
+    margin-right: auto;
 }
 
-ul {
+li {
+  list-style-type: none;
+}
+
+/* ul {
   align-items: center;
   padding: 10px;
-}
+} */
 
 /* || Button */
 
