@@ -1,32 +1,38 @@
 /* || General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 2h;
     margin-right: 80px;
     margin-left: 80px;
+    margin-top: 80px;
     justify-content: center;
 }
 
 h1 {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 5.5rem;
+    text-align: center;
 }
+
 
 /* || Photo Grid Styles */
-
 .photo-grid {
+    /* Used this for grid reference: 
+    https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    grid-auto-rows: minmax(100px, auto);
+    gap: 20px;
+    grid-gap: 1rem;
 }
 
-/* .photo-grid > div {
-    
-    
-} */
-
 img {
-    max-width: 100%;
+    /* sets minimum width */
+    min-width: 100%;
+    /* set max height so each image fills grid */
+    max-height: 35vh;
     border-radius: 10px;
+    /* image retains aspect ratio but fills all available space 
+    See this for reference: 
+    https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit */
+    object-fit: cover;
 }
